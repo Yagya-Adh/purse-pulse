@@ -65,8 +65,8 @@ const Testimonials = () => {
 
   return (
     <div className="bg-meroColor-jet-black text-meroColor-light-grey w-full max-w-screen-2xl mx-auto">
-      <div className="flex items-center flex-col md:flex-row md:justify-center transition-all ease-in-out overflow-hidden max-w-screen mx-auto px-28">
-        <div className="grid grid-cols-1 gap-10 mx-auto">
+      <div className="flex items-center flex-col md:flex-row md:justify-center transition-all ease-in-out">
+        <div className="grid grid-cols-1 gap-10 md:mx-auto">
           <TestimonialsHead
             handleSlider={handleSlide}
             currentIndex={currentIndex}
@@ -83,12 +83,12 @@ export default Testimonials;
 
 const rightContent = (
   <>
-    <h1 className="text-6xl text-meroColor-white-10 font-bold min-w-60 max-w-screen-2xl  ">
+    <h1 className="text-4xl md:text-5xl text-meroColor-white-10 font-bold">
       Join
       <span className="text-meroColor-electric-indigo"> 5 million+ </span>
       members
     </h1>
-    <p className="text-xl text-meroColor-light-grey my-5 items-center max-w-screen-2xl">
+    <p className="text-xl text-meroColor-light-grey my-5 items-center ">
       We’ve worked hard for the past 5 years saving our members over $1 billion
       dollars and counting. We’ll do just that for you too.
     </p>
@@ -102,7 +102,7 @@ interface ITestimonialData {
 
 const TestimonialsHead = ({ handleSlider, currentIndex }: ITestimonialData) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 items-center justify-center  p-10">
+    <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-x-10 items-center ">
       <div className="order-2 lg:order-1 bg-transparent rounded-r-full border-l-0 border-2 border-meroColor-electric-indigo flex justify-center items-end  m-20 mx-auto ">
         <div className="flex items-center justify-center h-70 p-1 m-1">
           <button onClick={() => handleSlider(-1)}>
@@ -137,12 +137,12 @@ const TestimonialsHead = ({ handleSlider, currentIndex }: ITestimonialData) => {
 
 const TestimonialFooter = () => {
   return (
-    <div className="text-center  items-center flex flex-col justify-items-center">
-      <h1 className="text-6xl min-w-96 md:max-w-screen-2xl text-meroColor-white-10 font-bold py-1">
+    <div className="flex flex-col justify-center items-center text-center md:px-5 px-1/2">
+      <h1 className="text-2xl md:text-4xl text-meroColor-white-10 font-bold">
         Unlock even more with{" "}
         <span className="text-meroColor-electric-indigo">PursePulse Pro</span>
       </h1>
-      <p className="md:text-xl max-w-screen-2xl min-w-96 overflow-hidden my-3 py-3">
+      <p className="md:text-xl max-w-screen-2xl mt-4 py-3 ">
         Gain access to real professionals ready to answer your questions and
         provide personalized advice, ensuring your financial success, only with
         PursePulse Pro.

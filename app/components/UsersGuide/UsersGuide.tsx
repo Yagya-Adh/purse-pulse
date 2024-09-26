@@ -130,11 +130,11 @@ const UserHeading = () => {
   return (
     <>
       <div className="text-center flex flex-col justify-center items-center  transition-all ease-in-out delay-100 hover:-translate-y-1 hover:scale-100   duration-700 my-10">
-        <h1 className="text-meroColor-white-10 text-7xl font-bold ">
+        <h1 className="text-meroColor-white-10 text-4xl md:text-5xl font-bold ">
           Start for
           <span className="text-meroColor-electric-indigo"> free</span>
         </h1>
-        <p className="text-2xl py-10 items-center">
+        <p className="md:text-xl text-center items-center p-2 my-3 min-w-32">
           No need to watch long-winded tutorials to get started with our app.
           Just follow these 5 steps and make your first transaction today.
         </p>

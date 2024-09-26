@@ -16,9 +16,9 @@ export default Contact;
 
 const PricingEndHeader = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between bg-meroColor-platinum-10 p-20">
-      <div className="flex flex-col justify-between ">
-        <h1 className="text-meroColor-electric-indigo text-5xl font-bold mb-2 max-w-screen-2xl ">
+    <div className="flex flex-col md:flex-row items-center justify-between bg-meroColor-platinum-10 px-5 md:px-10 pt-20 pb-20">
+      <div className="flex flex-col justify-between px-1">
+        <h1 className="text-meroColor-electric-indigo text-5xl font-bold mb-2">
           Take control{" "}
           <span className="text-meroColor-black-10">
             of your financial journey with
@@ -28,7 +28,7 @@ const PricingEndHeader = () => {
         <Image src={mainLogo} width="300" height="300" alt="logoimage_" />
       </div>
 
-      <p className="text-meroColor-dark-gray  max-w-screen-sm">
+      <p className="text-meroColor-dark-gray  max-w-screen-sm  ">
         Empower your money journey, make informed decisions, and achieve lasting
         financial success. Start budgeting, saving, and learning with us today.
         Let&apos;s do this!

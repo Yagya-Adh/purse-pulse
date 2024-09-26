@@ -76,12 +76,10 @@ const HomeCard = () => {
               homeGroup.overflowHidden ? "" : "md:py-48"
             }`}
           >
-            <div className="p-20  place-self-center">
+            <div className=" p-10 md:p-5 mt-20 ms-5 place-self-center">
               {homeGroup.title.map((homeTitle) => (
                 <div key={homeTitle.id}>
-                  <h1
-                    className={`text-7xl font-extrabold mb-4 leading-tighter inline-block `}
-                  >
+                  <h1 className={`text-5xl md:text-6xl font-extrabold mb-4`}>
                     <span> {homeTitle.titleOne}</span>{" "}
                     <span className="text-meroColor-electric-indigo">
                       {homeTitle.titleTwo}
@@ -103,7 +101,7 @@ const HomeCard = () => {
 
             {homeGroup.imageHome && (
               <div
-                className={`w-full ${homeGroup.orderImage} h-full relative px-20`}
+                className={`w-full ${homeGroup.orderImage} h-full relative  md:px-20`}
               >
                 <div
                   className={`
@@ -113,8 +111,7 @@ const HomeCard = () => {
                     flex
                     flex-col
                     items-center
-                    justify-end
-                  
+                    justify-end                  
                     ${
                       homeGroup.overflowHidden
                         ? "overflow-hidden"

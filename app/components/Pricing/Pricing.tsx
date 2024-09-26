@@ -95,8 +95,9 @@ const Pricing = () => {
     <div className="pt-20 max-w-screen-2xl mx-auto">
       <div
         className={`
-           transition-all ease-in-out duration-500  md:mx-auto
-        rounded-b-none rounded-full  md:rounded-t-[28%]  mx-10 py-10 items-center flex flex-col justify-center
+        transition-all ease-in-out duration-500  lg:mx-auto
+        rounded-b-none rounded-full  md:rounded-t-[28%] 
+        md:mx-10 py-10 items-center flex flex-col justify-center
         ${
           isShow ? "bg-meroColor-dark-gray " : "bg-meroColor-electric-indigo "
         }    `}
