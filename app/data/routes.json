@@ -1,0 +1,29 @@
+[
+  { "id": 1, "path": "/", "name": "Home" },
+  { "id": 2, "path": "features", "name": "Feature" },
+  {
+    "id": 3,
+    "path": "users-guide",
+    "name": "User Guide"
+  },
+  {
+    "id": 4,
+    "path": "testimonials",
+    "name": "Testimonials"
+  },
+  {
+    "id": 5,
+    "path": "pricing",
+    "name": "Pricing"
+  },
+  {
+    "id": 6,
+    "path": "faqs",
+    "name": "FAQs"
+  },
+  {
+    "id": 7,
+    "path": "contact",
+    "name": "Contact"
+  }
+]
