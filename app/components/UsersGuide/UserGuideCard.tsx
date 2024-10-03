@@ -78,7 +78,7 @@ const UserGuideCard = ({ listings }: UserGuideCardProps) => {
     <div className="grid grid-cols-2 md:gap-16 gap-8">
       {/* Image component */}
       <div className="relative flex items-start justify-end ">
-        <div className="scale-75 sticky top-16 mx-20">
+        <div className="scale-75 sticky top-16">
           <div className="relative">
             <Image
               src={frameImage}
