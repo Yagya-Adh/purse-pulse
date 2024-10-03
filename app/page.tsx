@@ -14,7 +14,7 @@ interface IRoute {
   element: ReactNode;
   name?: string;
 }
-export const routes: IRoute[] = [
+const routes: IRoute[] = [
   { id: 1, path: "/", element: <HomeCard />, name: "Home" },
   { id: 2, path: "#features", element: <Features />, name: "Feature" },
   { id: 3, path: "#users-guide", element: <UsersGuide />, name: "User Guide" },

@@ -16,7 +16,7 @@ interface NavBarProps {
   routes: IlinksList[];
 }
 
-const NavBar: React.FC<NavBarProps> = ({ routes }) => {
+const NavBar = ({ routes }: NavBarProps) => {
   const [isClick, setIsClick] = useState(false);
 
   return (
@@ -26,25 +26,21 @@ const NavBar: React.FC<NavBarProps> = ({ routes }) => {
           <Link href="/">
             <Image src={logoImg} width={160} alt="logo_" />
           </Link>
-          {!isClick ? (
-            ""
-          ) : (
-            <ul className="hidden md:flex justify-center items-center">
-              {routes.slice(1, 10).map((route) => (
-                <li
-                  key={route.id}
-                  className="text-meroColor-dark-gray text-wrap text-sm me-5 hover:text-meroColor-electric-indigo text-center"
-                >
-                  <Link href={route.path}>{route.name}</Link>
-                </li>
-              ))}
-              <ButtonPills
-                btnName="Start free trial"
-                hoverColor="hover:ring-meroColor-electric-indigo"
-                hoverTextColor="hover:text-meroColor-electric-indigo"
-              />
-            </ul>
-          )}
+          <ul className="hidden md:flex justify-center items-center">
+            {routes.slice(1, 10).map((route) => (
+              <li
+                key={route.id}
+                className="text-meroColor-dark-gray text-wrap text-sm me-5 hover:text-meroColor-electric-indigo text-center"
+              >
+                <Link href={route.path}>{route.name}</Link>
+              </li>
+            ))}
+            <ButtonPills
+              btnName="Start free trial"
+              hoverColor="hover:ring-meroColor-electric-indigo"
+              hoverTextColor="hover:text-meroColor-electric-indigo"
+            />
+          </ul>
           <div className="md:hidden">
             <Bars3Icon
               onClick={() => setIsClick(!isClick)}
